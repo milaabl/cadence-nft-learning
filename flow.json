@@ -1,0 +1,59 @@
+{
+	"contracts": {
+		"ExampleNFT": "cadence/contracts/exampleNFT/ExampleNFT.cdc",
+		"FungibleToken": {
+			"source": "",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6"
+			}
+		},
+		"MetadataViews": {
+			"source": "",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7"
+			}
+		},
+		"ViewResolver": "cadence/contracts/standards/ViewResolver.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"default": {
+			"address": "f669cb8d41ce0c74",
+			"key": "2e09fac1b3b8e128c67b2e57ba59ec8506ff8326053812135a954b4d3291096f"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "d2c3686da84d61c13627bdf2127866fe358165734f5470be792e6771901d2856"
+		},
+		"exampleNFT": {
+			"address": "192440c99cb17282",
+			"key": "58cfc56dcbbfa8bfb7b9898586793b0710dfebe8a0358774044968abc9acc8c2"
+		},
+		"standards": {
+			"address": "fd43f9148d4b725d",
+			"key": "28946711cc802634ca4520c0f8b113e065c519dc02306a05ecb204a896ee80ed"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"default": [],
+			"exampleNFT": [
+				"ExampleNFT"
+			],
+			"standards": [
+				"ViewResolver"
+			]
+		}
+	}
+}
